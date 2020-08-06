@@ -1,0 +1,152 @@
+.top-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: $transition;
+
+  &.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: $transition;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.article-img-wrapper {
+  margin: 6rem 1.5rem;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 430px;
+    max-height: 400px;
+    object-fit: cover;
+    border-width: 10px 10px 40px 10px;
+    border-color: #fff;
+    border-style: solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(5rem) rotateZ(-5deg);
+    transition: $transition;
+
+    &.is-visible {
+      opacity: 1;
+      transform: rotateZ(-2deg);
+    }
+  }
+}
+
+.fact {
+  &_title {
+    font-weight: 300;
+  }
+}
+
+.quote {
+  background: #e7fceb;
+  border-left: 8px solid #58c13d;
+  padding: 1rem;
+  margin: 2rem 0 3rem 0;
+
+  q {
+    font-weight: 300;
+  }
+
+  &_author {
+    text-align: right;
+    margin: 0;
+    font-size: 0.9rem;
+
+    &::before {
+      content: '- ';
+    }
+  }
+}
+
+.bg-circle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: rgba(158, 237, 138, 0.3);
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.bg-circle-1 {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.bg-circle-2 {
+  right: 5%;
+  top: 5%;
+  transform: translate(35%, 0);
+}
+
+.bg-circle-3 {
+  left: -5%;
+  top: 25%;
+}
+
+.bg-circle-4 {
+  right: 10%;
+  top: 41%;
+}
+
+.bg-circle-5 {
+  left: 10%;
+  top: 61%;
+}
+
+.bg-circle-6 {
+  top: 82%;
+  right: -10%;
+}
+
+.balls {
+  text-align: right;
+  padding-right: 1rem;
+
+  span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 0.2rem;
+
+    &:nth-child(1) {
+      background: #fd3b3b;
+    }
+    &:nth-child(2) {
+      background: #34da59;
+    }
+    &:nth-child(3) {
+      background: #e4a503;
+    }
+  }
+}
+
+.follow-us {
+  margin-top: 2rem;
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  svg {
+    margin-right: 0.25rem;
+  }
+}

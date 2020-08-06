@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.45;
+  background: #e5e5e5;
+  color: #222020;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+.main {
+  max-width: 768px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+.article {
+  padding: 4rem 1.5rem;
+}
+@media (min-width: 600px) {
+  .article {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+.article_title {
+  margin-bottom: 0.5rem;
+}
+
+.facts_subheading {
+  margin-bottom: 2rem;
+}
+
+.top-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.25s 0.25s ease-out;
+}
+.top-img.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.25s 0.25s ease-out;
+}
+.animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.article-img-wrapper {
+  margin: 6rem 1.5rem;
+  text-align: center;
+}
+.article-img-wrapper img {
+  width: 100%;
+  max-width: 430px;
+  max-height: 400px;
+  object-fit: cover;
+  border-width: 10px 10px 40px 10px;
+  border-color: #fff;
+  border-style: solid;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(5rem) rotateZ(-5deg);
+  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.25s 0.25s ease-out;
+}
+.article-img-wrapper img.is-visible {
+  opacity: 1;
+  transform: rotateZ(-2deg);
+}
+
+.fact_title {
+  font-weight: 300;
+}
+
+.quote {
+  background: #e7fceb;
+  border-left: 8px solid #58c13d;
+  padding: 1rem;
+  margin: 2rem 0 3rem 0;
+}
+.quote q {
+  font-weight: 300;
+}
+.quote_author {
+  text-align: right;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.quote_author::before {
+  content: "- ";
+}
+
+.bg-circle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: rgba(158, 237, 138, 0.3);
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.bg-circle-1 {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.bg-circle-2 {
+  right: 5%;
+  top: 5%;
+  transform: translate(35%, 0);
+}
+
+.bg-circle-3 {
+  left: -5%;
+  top: 25%;
+}
+
+.bg-circle-4 {
+  right: 10%;
+  top: 41%;
+}
+
+.bg-circle-5 {
+  left: 10%;
+  top: 61%;
+}
+
+.bg-circle-6 {
+  top: 82%;
+  right: -10%;
+}
+
+.balls {
+  text-align: right;
+  padding-right: 1rem;
+}
+.balls span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-right: 0.2rem;
+}
+.balls span:nth-child(1) {
+  background: #fd3b3b;
+}
+.balls span:nth-child(2) {
+  background: #34da59;
+}
+.balls span:nth-child(3) {
+  background: #e4a503;
+}
+
+.follow-us {
+  margin-top: 2rem;
+}
+.follow-us p {
+  margin-bottom: 0.5rem;
+}
+.follow-us svg {
+  margin-right: 0.25rem;
+}
+
+/*# sourceMappingURL=main.css.map */
